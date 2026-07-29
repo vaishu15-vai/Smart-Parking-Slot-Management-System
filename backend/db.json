@@ -1,0 +1,156 @@
+{
+  "managers": [
+    {
+      "id": "MGR-1001",
+      "name": "David Miller",
+      "email": "manager1@parksmart.com",
+      "password": "mgr123",
+      "centerId": "center-1",
+      "centerName": "Metro Central Smart Hub",
+      "paytmPhone": "9876543210",
+      "createdAt": "2026-07-25T14:35:00.000Z"
+    },
+    {
+      "id": "MGR-1002",
+      "name": "Sarah Connor",
+      "email": "manager2@parksmart.com",
+      "password": "mgr123",
+      "centerId": "center-2",
+      "centerName": "Tech Park Automated Garage",
+      "paytmPhone": "9876500112",
+      "createdAt": "2026-07-25T14:35:00.000Z"
+    }
+  ],
+  "centers": [
+    {
+      "id": "center-1",
+      "name": "Metro Central Smart Hub",
+      "address": "452 Park Avenue, Downtown",
+      "distanceKm": 2.4,
+      "estimatedMinutes": 8,
+      "totalSlots": 20,
+      "availableSlots": 14,
+      "hourlyRate": 5,
+      "mapX": 32,
+      "mapY": 38,
+      "facilities": [
+        "EV Charging",
+        "Covered Parking",
+        "24/7 Security",
+        "Valet"
+      ],
+      "image": "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&w=600&q=80",
+      "contact": "+91 98765 43210",
+      "paytmPhone": "9876543210",
+      "operatingHours": "06:00 AM - 11:00 PM",
+      "managerId": "MGR-1001"
+    },
+    {
+      "id": "center-2",
+      "name": "Tech Park Automated Garage",
+      "address": "88 Innovation Boulevard",
+      "distanceKm": 8.5,
+      "estimatedMinutes": 18,
+      "totalSlots": 15,
+      "availableSlots": 6,
+      "hourlyRate": 4.5,
+      "mapX": 68,
+      "mapY": 28,
+      "facilities": [
+        "EV Charging",
+        "Automated Barrier",
+        "CCTV Surveillance"
+      ],
+      "image": "https://images.unsplash.com/photo-1590674899484-d5640e854abe?auto=format&fit=crop&w=600&q=80",
+      "contact": "+91 98765 00112",
+      "paytmPhone": "9876500112",
+      "operatingHours": "08:00 AM - 10:00 PM",
+      "managerId": "MGR-1002"
+    },
+    {
+      "id": "center-3",
+      "name": "Grand Plaza Underground Parking",
+      "address": "102 City Center Mall",
+      "distanceKm": 14.2,
+      "estimatedMinutes": 32,
+      "totalSlots": 25,
+      "availableSlots": 18,
+      "hourlyRate": 6,
+      "mapX": 45,
+      "mapY": 68,
+      "facilities": [
+        "Underground",
+        "Car Wash Service",
+        "Valet"
+      ],
+      "image": "https://images.unsplash.com/photo-1573348722427-f1d6819fdf98?auto=format&fit=crop&w=600&q=80",
+      "contact": "+91 98111 22233",
+      "paytmPhone": "9811122233",
+      "operatingHours": "07:00 AM - 12:00 AM",
+      "managerId": null
+    },
+    {
+      "id": "center-4",
+      "name": "Skyline Airport Express Deck",
+      "address": "Terminal 2 Entrance Rd",
+      "distanceKm": 24.8,
+      "estimatedMinutes": 48,
+      "totalSlots": 30,
+      "availableSlots": 12,
+      "hourlyRate": 8,
+      "mapX": 82,
+      "mapY": 80,
+      "facilities": [
+        "24/7 Security",
+        "Airport Shuttle",
+        "Long Term Parking"
+      ],
+      "image": "https://images.unsplash.com/photo-1543465077-db45d34b88a5?auto=format&fit=crop&w=600&q=80",
+      "contact": "+91 99887 76655",
+      "paytmPhone": "9988776655",
+      "operatingHours": "24 Hours Open",
+      "managerId": null
+    }
+  ],
+  "requests": [
+    {
+      "id": "req-101",
+      "visitId": "VST-9812",
+      "userEmail": "alex@user.com",
+      "userName": "Alex Johnson",
+      "userPhone": "+91 98765 11111",
+      "centerId": "center-1",
+      "centerName": "Metro Central Smart Hub",
+      "vehicleNo": "KA-05-EV-4421",
+      "startTime": "14:00",
+      "durationHours": 3,
+      "totalPrice": 15,
+      "status": "paid",
+      "paymentStatus": "paid",
+      "physicalStatus": "unconfirmed",
+      "paytmPhone": "9876543210",
+      "createdAt": "2026-07-25T08:14:41.895Z",
+      "slotNumber": "A-05"
+    },
+    {
+      "id": "req-102",
+      "visitId": "VST-4509",
+      "userEmail": "sarah@user.com",
+      "userName": "Sarah Jenkins",
+      "userPhone": "+91 98765 22222",
+      "centerId": "center-2",
+      "centerName": "Tech Park Automated Garage",
+      "vehicleNo": "NY-889-X",
+      "startTime": "11:00",
+      "durationHours": 2,
+      "totalPrice": 9,
+      "status": "physically_confirmed",
+      "paymentStatus": "paid",
+      "physicalStatus": "physically_confirmed",
+      "paytmPhone": "9876500112",
+      "createdAt": "2026-07-25T06:59:41.896Z",
+      "slotNumber": "EV-02"
+    }
+  ],
+  "slotsLayout": {}
+}
